@@ -1,0 +1,76 @@
+/*****************************
+General Styling 
+******************************/
+
+body {
+	background-color: none;
+	font-family: 'Raleway', Arial, sans-serif;
+	font-size: 1rem;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+
+p.footer {
+	text-align: right;
+	margin: 10px 10px;
+	font-size: .707rem;
+	font-weight: bold;
+}
+
+/*****************************
+Psuedo Classes
+******************************/
+
+
+
+/*****************************
+Body Styling 
+******************************/
+h1 {
+	font-family: 'Quicksand', Arial, sans-serif;
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin: 1.3rem 0 0 0;
+	text-align: center;
+
+
+}
+
+.small-header {
+	height: 100%;
+	background: url(../img/reikisite_small.svg) no-repeat;
+	background-size: cover;
+
+}
+
+.intro {
+	padding-bottom: 3rem;
+	text-align: center;
+}
+
+.lovely {
+	background-color: none;
+	margin-top: 10rem;
+	padding: 1px;
+ 	text-align: center;
+}
+
+
+/*****************************
+Media Queries 
+******************************/	
+
+@media screen and (min-width: 39em) and (max-width: 63em) {
+
+.lovely {
+	margin-top: 5rem;
+
+}
+
+
+
+}
