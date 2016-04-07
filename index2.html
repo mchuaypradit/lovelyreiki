@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <div class="row expanded title">
+    <div class="row title">
       <div class="column small-12">
         <h2>What is reiki?</h2>
       </div>
@@ -61,14 +61,41 @@
       </div>
     </div>
 
-    <div class="row expanded appointment">
+    <div class="row appointment">
       <div class="column small-12">
-        <h2>Make an appointment</h2>
+        <h2>Book a session.</h2>
       </div>
       <div class="column small-12 content">
           <p>Bacon ipsum dolor amet biltong landjaeger beef corned beef t-bone tail. Pig t-bone sausage, pork filet mignon doner porchetta ham ball tip frankfurter kielbasa tongue prosciutto bresaola boudin. Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. Tongue frankfurter 
       </div>
-    </div>
+     </div>  
+    
+      <div class="column contact-form">
+        <form action="form_contact_process.php" method="POST" name="contact" id="contact">
+          <fieldset>
+            <legend></legend>
+              <div class="row medium-6 collapse">
+                  <label for="name">Name *</label>
+              <input type="text" name="name" id="name">
+              </div>
+              <div class="row medium-6 collapse">
+                  <label for="email">Email *</label>
+              <input type="text" name="email" id="email">
+              </div>
+              <div class="row medium-6  collapse">
+                  <label for="phone">Phone *</label>
+              <input type="text" name="phone" id="phone">
+              </div>
+              <div class="row medium-6  collapse">
+                  <label for="message">Message (please include date and time) *</label>
+                  <textarea name="message" id="message" rows="5"></textarea>
+              </div>
+              <div class="row medium-2 collapse">
+                  <input class="button small large-12" type="submit" value="SUBMIT">
+              </div>
+          </fieldset>
+        </form>
+      </div>
 
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
