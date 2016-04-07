@@ -1,0 +1,23 @@
+html,body{
+  height:100%;
+}
+
+body {
+  background-color: none;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 1rem;
+}
+
+p{
+  font-size:2em;
+  text-align:center;
+}
+.top-section{
+  height:100%;
+}
+.more{
+/*  display:block;*/
+  position:absolute;
+  bottom:20px;
+  text-align:center;
+}

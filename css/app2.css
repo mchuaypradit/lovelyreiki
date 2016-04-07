@@ -1,0 +1,173 @@
+/*****************************
+General Styling 
+******************************/
+html, 
+body {
+    height: 100%;
+}
+
+body {
+	background-color: none;
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: .889rem;
+	color: #392254;
+}
+
+footer {
+	text-align: right;
+	margin: .889rem 0px 0px 0px;
+	color: #DCD1E8;
+	font-size: .707rem;
+	font-weight: bold;
+/*	background-color: #695284;*/
+}
+
+a {
+	font-family: 'Quicksand';
+	font-weight: lighter;
+}
+/*****************************
+Psuedo Classes
+******************************/
+
+a:link,
+a:visited {
+	color: #695284;
+}
+
+a:hover {
+	color: #DCD1E8;
+	text-decoration: overline;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+
+/*****************************
+Body Styling 
+******************************/
+h1 {
+	font-family: 'Quicksand', Arial, sans-serif;
+	font-size: 1.3rem;
+	color: #695284;
+	margin: 1.3rem 0 0 0;
+	text-align: center;
+
+}
+
+h2 {
+	font-family: 'Quicksand', Arial, sans-serif;
+	font-size: 2.1rem;
+	font-weight: light;
+	color: gray;
+	text-align: center;
+
+}
+.header {
+	min-height: 100%;
+	background-color: none;
+
+}
+
+.lovely {
+	max-width: 100%;
+	background-color: none;
+	padding-top: 4rem;
+ 	text-align: center;
+}
+
+
+.menu-centered {
+	text-align: center;
+	display: inline-block;
+	padding: 2rem 0rem;
+}
+
+.arrow {
+	padding-top: 5rem;
+	width: 12%;
+}
+
+.title {
+	min-height: 100%;
+	width: 100%;
+	padding-top: 10rem;
+	z-index: -10;
+	overflow: auto;
+	position: relative;
+	background-image: url(../img/watercolor.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+}
+
+.about {
+	min-height: 100%;
+	padding: 3rem 1.5rem;
+	background-color: #E1DAEA;
+}
+.about h2 {color: #fff}
+
+.about p {color: #372E44;}
+
+.pic {
+	border-radius: 50%;
+	width: 70%;
+	padding: 2rem 0rem;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.content {
+	text-align: left;
+	padding: 1.5rem;
+	background-color: transparent;
+}
+
+.appointment {
+	background-color: none;
+	padding: 3rem 1.5rem;
+
+}
+/*****************************
+Media Queries 
+******************************/	
+
+@media screen and (min-width: 39em) and (max-width: 63em) {
+
+	.lovelybanner {
+		padding-top: .5rem;
+		width: 60%;
+}
+
+.about {
+		padding: 2rem 15rem;
+	}
+
+}
+
+@media screen and (min-width: 64em) {
+	.lovely {
+		padding-top: 1rem;
+	}
+
+	.about {
+		padding: 2rem 15rem;
+	}
+
+	.content {
+		padding: 1rem 15rem;
+	}
+}
+
+@media screen and (min-width: 100em) {
+	.lovely {
+		padding-top: 2rem;
+	}
+}
+
+
