@@ -3,7 +3,9 @@ General Styling
 ******************************/
 html, 
 body {
+	-webkit-text-size-adjust: none;
     height: 100%;
+/*    padding: 0px;*/
 }
 
 body {
@@ -13,18 +15,26 @@ body {
 	color: #392254;
 }
 
-footer {
+.footer {
+
+}
+
+.footer p {
 	text-align: right;
-	margin: .889rem 0px 0px 0px;
-	color: #DCD1E8;
+	color: #392254;
 	font-size: .707rem;
-	font-weight: bold;
-/*	background-color: #695284;*/
+	margin: 0 0.5rem 0.5rem 0;
 }
 
 a {
 	font-family: 'Quicksand';
 	font-weight: lighter;
+}
+
+.columns {padding: 0px;}
+
+.column:last-child:not(:first-child) {
+	float: none;
 }
 /*****************************
 Psuedo Classes
@@ -32,7 +42,8 @@ Psuedo Classes
 
 a:link,
 a:visited {
-	color: #695284;
+	font-size: 1rem;
+	color: #321D5B;
 }
 
 a:hover {
@@ -40,7 +51,9 @@ a:hover {
 	text-decoration: overline;
 }
 
-footer a:hover {
+.footer a:hover {
+	color: #321D5B;
+	font-weight: bold;
 	text-decoration: none;
 }
 
@@ -58,7 +71,7 @@ h1 {
 	font-family: 'Quicksand', Arial, sans-serif;
 	font-size: 1.3rem;
 	color: #695284;
-	margin: 1.3rem 0 0 0;
+	margin-top: 1.3rem;
 	text-align: center;
 
 }
@@ -69,11 +82,13 @@ h2 {
 	font-weight: light;
 	color: gray;
 	text-align: center;
+	padding: 2rem 0 1rem 0;
 
 }
 .header {
 	min-height: 100%;
 	background-color: none;
+	padding-bottom: 1.5rem;
 
 }
 
@@ -84,11 +99,16 @@ h2 {
  	text-align: center;
 }
 
+.lovelytitle {
+	padding-bottom: 2.5rem;
+}
 
-.menu-centered {
+.menu {
+	background-color: white;
+	width: 100%;
 	text-align: center;
 	display: inline-block;
-	padding: 2rem 0rem;
+	padding: 0rem 8rem;	
 }
 
 .arrow {
@@ -96,23 +116,27 @@ h2 {
 	width: 12%;
 }
 
-.title {
+.reiki {
 	min-height: 100%;
 	width: 100%;
-	padding-top: 10rem;
-	z-index: -10;
-	overflow: auto;
-	position: relative;
+/*	z-index: -10;*/
+/*	position: relative;*/
 	background-image: url(../img/watercolor.png);
-	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
+	overflow: scroll;
 	text-align: center;
+}
+
+.feed {
+	min-height: 100%;
+	
 }
 
 .about {
 	min-height: 100%;
-	padding: 3rem 1.5rem;
+	overflow-y: scroll;
+	padding: 3rem 0rem;
 	background-color: #E1DAEA;
 }
 .about h2 {color: #fff}
@@ -120,12 +144,11 @@ h2 {
 .about p {color: #372E44;}
 
 .pic {
+	margin-bottom: 2.5rem;
 	border-radius: 50%;
-	width: 70%;
-	padding: 2rem 0rem;
 	display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .content {
@@ -137,7 +160,7 @@ h2 {
 .appointment {
 	min-height: 100%
 	background-color: none;
-	padding: 1rem 1.5rem 0rem 1.5rem;
+	padding-top: 1rem;
 
 }
 
@@ -146,7 +169,7 @@ label {
 }
 
 .button {
-  color: transparent;
+  color: #E376B3;
   font-size: 1rem;
   letter-spacing: 2px;
   border: 2px solid transparent;
@@ -161,31 +184,57 @@ label {
 Media Queries 
 ******************************/	
 
-@media screen and (min-width: 39em) and (max-width: 63em) {
+
+@media screen and (min-width: 30em) and (max-width: 63em) {
 
 	.lovelybanner {
 		padding-top: .5rem;
-		width: 60%;
-}
+		width: 50%;
+	}
+
+	.reiki { 
+		padding-top: 4rem;
+	}
 
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 47em) {
+
+		.content {
+		padding: 1rem 5rem;
+	}
+
+}
+
+
+@media screen and (min-width: 65em) {
+
 	.lovely {
 		padding-top: 1rem;
 	}
 
-	.about {
-		padding: 2rem 15rem;
+	.menu {
+		padding-top: 0rem;
 	}
 
 	.content {
 		padding: 1rem 15rem;
 	}
 
-/*	.appointment {
-		padding: 2rem;
-	}*/
+	.reiki {
+	min-height: 100%;
+	width: 100%;
+	padding-top: 4rem;
+/*	z-index: -10;*/
+/*	position: relative;*/
+	background-image: url(../img/watercolor.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: scroll;
+	text-align: center;
+	}
+
 }
 
 @media screen and (min-width: 100em) {
@@ -194,4 +243,24 @@ Media Queries
 	}
 }
 
+
+/*****************************
+Animation
+******************************/	
+.pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.1;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.1;
+    }
+}
 

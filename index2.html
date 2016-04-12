@@ -3,111 +3,128 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reiki Practioner, Spiritual Healing, Brooklyn  ◇  Christina Lovely</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reiki Practioner, Energy Healing, Brooklyn  ◇  Christina Lovely</title>
     <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300|Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css" />
     <link rel="stylesheet" href="css/app2.css" />
   </head>
   <body>
 
   	<div class="row expanded header">
       <div class="small-12 columns lovely">
+
         <img src="img/lovelywatercolor.png" class="lovelybanner">
-        <div>
+        <div class="lovelytitle">
           <h1>Christina Lovely<br>◇<br>Reiki Practitioner</h1>
         </div>
-        
+
         <div class="row show-for-small-only">
-          <div class="columns">
-            <img src="img/arrow.svg" class="arrow">
+          <div class="columns" data-magellan>
+            <a href="#reiki"><img src="img/arrow.svg" class="arrow"></a>
           </div>
         </div>
 
-        <div class="menu-centered hide-for-small-only">
-          <ul class="menu">
-            <li><a href="#reiki">REIKI</a></li>
-            <li><a href="#">DAILY</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
+        <div data-sticky-container>
+          <div class="hide-for-small-only sticky" id="sticky-magellan" style="width:100%;" data-sticky data-margin-top="0" data-margin-bottom="0" data-top-anchor="topanchor" data-btm-anchor="contact:bottom">
+            <nav data-magellan>
+              <ul class="menu expanded">
+                <li><a href="#reiki">REIKI</a></li>
+                <!-- <li><a href="#instagram">INSTAGRAM</a></li> -->
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
 
       </div>
     </div>
 
-    <div class="row title">
+    <div class="row" id="topanchor"><br><br></div>
+
+    <div class="row reiki" id="reiki" data-magellan-target="reiki">
       <div class="column small-12">
         <h2>What is reiki?</h2>
       </div>
       <div class="column small-12 content">
           <p>Bacon ipsum dolor amet biltong landjaeger beef corned beef t-bone tail. Pig t-bone sausage, pork filet mignon doner porchetta ham ball tip frankfurter kielbasa tongue prosciutto bresaola boudin. Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. Tongue frankfurter.</p>
-          <br>
           <p>Bacon ipsum dolor amet biltong landjaeger beef corned beef t-bone tail. Pig t-bone sausage, pork filet mignon doner porchetta ham ball tip frankfurter kielbasa tongue prosciutto bresaola boudin. Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. Tongue frankfurter.</p>
+          <p>Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. Tongue frankfurter.</p>
+
       </div>
     </div>
 
-    <div class="row expanded about media-object">
+<!--     <div class="row expanded feed"  id="instagram" data-magellan-target="instagram">
+      <div id="instafeed"></div>
+    </div> -->
+
+    <div class="row expanded about media-object" id="about" data-magellan-target="about">
       <div class="column small-12 media-object-section">
         <h2>About Christina</h2>
       </div>
       <div class="column small-12 media-object-section">
-        <img class="pic" src="img/tinateepee.jpg">
+        <img data-interchange="[img/tinateepeesm.jpg, small], [img/tinateepeesm.jpg, medium], [img/tinateepeelg.jpg, large]" class="pic">
       </div>
-      <div class="column small-12 media-object-section">
+      <div class="column small-12 content">
           <p>Bacon ipsum dolor amet biltong landjaeger beef corned beef t-bone tail. Pig t-bone sausage, pork filet mignon doner porchetta ham ball tip frankfurter kielbasa tongue prosciutto bresaola boudin. Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. Tongue frankfurter sausage shank cupim cow prosciutto short loin pastrami. Rump fatback brisket pork chop meatloaf chuck.</p>
           <br>
           <p>Bacon ipsum dolor amet biltong landjaeger beef corned beef t-bone tail. Pig t-bone sausage, pork filet mignon doner porchetta ham ball tip frankfurter kielbasa tongue prosciutto bresaola boudin. Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. Tongue frankfurter.</p>
       </div>
     </div>
 
-    <div class="row appointment">
+    <div class="row appointment" id="contact" data-magellan-target="contact"><a href="#contact"></a>
       <div class="column small-12">
         <h2>Book a session.</h2>
       </div>
       <div class="column small-12 content">
-          <p>Bacon ipsum dolor amet biltong landjaeger beef corned beef t-bone tail. Pig t-bone sausage, pork filet mignon doner porchetta ham ball tip frankfurter kielbasa tongue prosciutto bresaola boudin. Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. Tongue frankfurter 
+          <p>Bacon ipsum dolor amet biltong landjaeger beef corned beef t-bone tail. Pig t-bone sausage, pork filet mignon doner porchetta ham ball tip frankfurter kielbasa tongue prosciutto bresaola boudin. Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. 
       </div>
-     </div>  
+    </div>  
     
-      <div class="column contact-form">
-        <form action="form_contact_process.php" method="POST" name="contact" id="contact">
+      <div class="row contact-form">
+        <form data-abide action="MAILTO:m.chuaypradit@icloud.com" method="POST" name="contact" id="contact" enctype="text/plain">
           <fieldset>
-            <legend></legend>
-              <div class="row medium-6 collapse">
+              <div class="column medium-7 medium-centered collapse name-field">
                   <label for="name">Name *</label>
-              <input type="text" name="name" id="name">
+              <input type="text" name="fullname" id="fullname" required>
               </div>
-              <div class="row medium-6 collapse">
+              <div class="column medium-7 medium-centered collapse email-field">
                   <label for="email">Email *</label>
-              <input type="text" name="email" id="email">
+              <input type="email" name="email" id="email" required>
               </div>
-              <div class="row medium-6  collapse">
-                  <label for="phone">Phone *</label>
-              <input type="text" name="phone" id="phone">
+              <div class="column medium-7 medium-centered collapse phone-field">
+                  <label for="tel">Phone *</label>
+              <input type="tel" name="tel" id="tel" required>
               </div>
-              <div class="row medium-6  collapse">
+              <div class="column medium-7 medium-centered collapse message-field">
                   <label for="message">Message (please include date and time) *</label>
-                  <textarea name="message" id="message" rows="5"></textarea>
+                  <textarea name="message" id="message" rows="5" required></textarea>
               </div>
-              <div class="row medium-2 collapse">
-                  <input class="button small large-12" type="submit" value="SUBMIT">
-              </div>
+              <div class="column medium-7 medium-centered collapse">
+                  <input class="button small" type="submit" value="SUBMIT">
+              </div> 
           </fieldset>
         </form>
       </div>
 
+
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
     <script src="js/app.js"></script>
 
-
-  <footer class="row">
+  <div class="row footer expanded">
     <div class="large-12 columns">
-      <a href="http://www.melaniechuaypradit.com" target="_blank"><p>&copy; 2016 Melanie Chuaypradit </p></a>
+      <ul>
+        <li>
+          <a href="http://www.melaniechuaypradit.com" target="_blank">
+          <p class="pulsate">MC >></p>
+        </li>
+      </ul>  
     </div>
-  </footer>
-  
+  </div>
+
   </body>
 </html>
+
