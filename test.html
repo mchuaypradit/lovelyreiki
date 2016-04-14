@@ -1,0 +1,48 @@
+
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Magellan allows you to create navigation that tracks the active section of a page your user is in. Pair it with our Sticky plugin to create a fixed navigation element.">
+  <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+  <title>Foundation for Sites 6 Docs | Magellan</title>
+      <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300|Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="./node_modules/motion-ui/dist/motion-ui.css" /> -->
+</head>
+<body>
+
+<div id="form-messages"></div>
+
+<form id="ajax-contact" method="post" action="mailer.php">
+    <div class="field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+
+    <div class="field">
+        <button type="submit">Send</button>
+    </div>
+</form>
+
+
+
+    <script src="jquery-2.1.0.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
