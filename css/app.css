@@ -9,68 +9,25 @@ body {
 }
 
 html, body {
-    position: relative;
     height: 100%;
 }
 
 
-p.footer {
-	text-align: right;
-	margin: 10px 10px;
-	font-size: .707rem;
-	font-weight: bold;
-}
-
-/*****************************
-Psuedo Classes
-******************************/
-
-
-
-/*****************************
-Body Styling 
-******************************/
-h1 {
-	font-family: 'Quicksand', Arial, sans-serif;
-	font-size: 1.1rem;
-	font-weight: bold;
-	margin: 1.3rem 0 0 0;
+h2 {
+	/*letter-spacing: 0.5em;*/
 	text-align: center;
-
-
+	padding: 5px 0;
+	/*background-color: red;*/
 }
 
-.small-header {
-	height: 800px;
-	background: url(../img/reikisite_small.svg) no-repeat;
-	background-size: cover;
-
-}
-
-.intro {
-	padding-bottom: 3rem;
-	text-align: center;
-}
-
-.lovely {
-	background-color: none;
-	margin-top: 10rem;
-	padding: 1px;
- 	text-align: center;
-}
-
-
-/*****************************
-Media Queries 
-******************************/	
-
-@media screen and (min-width: 39em) and (max-width: 63em) {
-
-	.lovely {
-		margin-top: 5rem;
-
-	}
-
-
-
-}
+.description {
+	/*background-color: rgb(255,255,0);*/
+    font-size: 12px;       
+    color: gray;
+    letter-spacing: 1px;
+    padding: .5rem;
+    height: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+ 

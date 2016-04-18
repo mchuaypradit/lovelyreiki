@@ -11,8 +11,8 @@
   </head>
   <body>
 
-  	<div class="row expanded header">
-      <div class="small-12 columns lovely">
+    <div class="row expanded header">
+      <div class="small-12 columns lovely" id="lovely" data-magellan-target="lovely">
 
         <img src="img/lovelywatercolor.png" class="lovelybanner">
 
@@ -27,13 +27,15 @@
         </div>
 
         <div data-sticky-container>
-          <div class="hide-for-small-only sticky" id="sticky-magellan" style="width:100%;" data-sticky data-margin-top="0" data-margin-bottom="0" data-top-anchor="topanchor" data-btm-anchor="contact:bottom">
+          <div class="hide-for-small-only sticky" id="sticky-magellan" style="width:100%;" data-sticky data-margin-top="0" data-margin-bottom="0" data-top-anchor="topanchor" data-btm-anchor="inspiration:bottom">
             <nav data-magellan>
               <ul class="menu">
+                <li><a href="#lovely">△</a></li>            
                 <li><a href="#reiki">REIKI</a></li>
-                <!-- <li><a href="#instagram">INSTAGRAM</a></li> -->
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#inspiration">INSPIRE</a></li>                
+
               </ul>
             </nav>
           </div>
@@ -49,16 +51,12 @@
         <h2>What is reiki?</h2>
       </div>
       <div class="column small-12 content">
-          <p>Bacon ipsum dolor amet biltong landjaeger beef corned beef t-bone tail. Pig t-bone sausage, pork filet mignon doner porchetta ham ball tip frankfurter kielbasa tongue prosciutto bresaola boudin. Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. Tongue frankfurter.</p>
-          <p>Bacon ipsum dolor amet biltong landjaeger beef corned beef t-bone tail. Pig t-bone sausage, pork filet mignon doner porchetta ham ball tip frankfurter kielbasa tongue prosciutto bresaola boudin. Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. Tongue frankfurter.</p>
-          <p>Fatback pork chop rump, tongue porchetta kielbasa chuck shoulder bresaola. Andouille tri-tip short ribs leberkas filet mignon venison landjaeger pastrami turkey cupim meatball kevin ham hock picanha ball tip. Tongue frankfurter.</p>
+          <p>Reiki is a form of alternative medicine developed in 1922 by Japanese Buddhist Mikao Usui. Since its beginning in Japan, Reiki has been adapted across varying cultural traditions. It uses a technique commonly called palm healing or hands-on-healing. Through the use of this technique, practitioners believe that they are transferring "universal energy" through the palms of the practitioner, which they believe encourages healing.</p>
+          <p>A Reiki session usually is between 60 and 90 minutes in length. The session is performed by using specific Reiki hand positions. During a session, the client is fully clothed while comfortably reclining on a massage table or seated in a chair. A Reiki session may help ease tension and stress and may help support the body to facilitate an environment for healing on all levels- physical, emotional and spiritual.  A session is pleasant and relaxing and is most often utilized for one’s own personal wellness.</p>
+          <p>Christina became interested in Reiki as a means of providing energy healing for the mind and body.  She finds this practice self-gratifying, with the desire to help you connect with your inner self.</p>
 
       </div>
     </div>
-
-<!--     <div class="row expanded feed"  id="instagram" data-magellan-target="instagram">
-      <div id="instafeed"></div>
-    </div> -->
 
     <div class="row expanded about" id="about" data-magellan-target="about">
       <div class="column small-12">
@@ -75,49 +73,78 @@
     </div>
 
     <div class="row appointment" id="contact" data-magellan-target="contact"><a href="#contact"></a>
-      <div class="column small-12">
+      <div class="row small-12">
         <h2>Book a session.</h2>
       </div>
+
       <div class="column medium-7 medium-centered">
-          <p>Make an appointment, ask a question, or just say hello!</p>
-          <p>Private Session: $xx / 60mins
+          <p>Make an appointment, ask a question, or just say hello! <br> Private Session: $xx / 60mins</p>
       </div>
-    </div>  
+
+      <div class="column medium-7 medium-centered">
+        <br>
+      </div> 
     
-    <div class="row contact-form">
-      <form data-abide action="MAILTO:m.chuaypradit@icloud.com?subject=Reiki Session" method="POST" name="contact" id="contact" enctype="text/plain">
-        <fieldset>
+      <div class="row contact-form">
+        <form data-abide action="MAILTO:m.chuaypradit@icloud.com?subject=Reiki Session" method="POST" name="contact" id="contact" enctype="text/plain">
+          <fieldset>
 
-            <div class="column medium-7 medium-centered collapse name-field">
-                <label for="name">Name *</label>
-            <input type="text" name="fullname" id="fullname" required>
-            </div>
-            <div class="column medium-7 medium-centered collapse email-field">
-                <label for="email">Email *</label>
-            <input type="email" name="email" id="email" required>
-            </div>
-            <div class="column medium-7 medium-centered collapse phone-field">
-                <label for="tel">Phone *</label>
-            <input type="tel" name="tel" id="tel" required>
-            </div>
-            <div class="column medium-7 medium-centered collapse message-field">
-                <label for="message">Message *</label>
-                <textarea name="message" id="message" rows="5" required></textarea>
-            </div>
-            <div class="column medium-7 medium-centered collapse">
-                <input class="button small" type="reset" value="RESET">
-                <input class="button small" type="submit" value="SUBMIT" style="float: right;">
-                
-            </div> 
-        </fieldset>
-      </form>
-    </div>
+              <div class="column medium-7 medium-centered collapse name-field">
+                  <label for="name">Name *</label>
+              <input type="text" name="fullname" id="fullname" required>
+              </div>
+              <div class="column medium-7 medium-centered collapse email-field">
+                  <label for="email">Email *</label>
+              <input type="email" name="email" id="email" required>
+              </div>
+              <div class="column medium-7 medium-centered collapse phone-field">
+                  <label for="tel">Phone *</label>
+              <input type="tel" name="tel" id="tel" required>
+              </div>
+              <div class="column medium-7 medium-centered collapse message-field">
+                  <label for="message">Message *</label>
+                  <textarea name="message" id="message" rows="5" required></textarea>
+              </div>
+              <div class="column medium-7 medium-centered collapse">
+                  <input class="button small" type="reset" value="RESET">
+                  <input class="button small" type="submit" value="SUBMIT" style="float: right;">
+                  
+              </div>
+              <div class="column medium-7 medium-centered collapse">
+                 
+              </div> 
 
+          </fieldset>
+        </form>
+      </div>
+  </div> 
+ 
+      <div class="row expanded instagram-content" id="inspiration" data-magellan-target="inspiration"><a href="#inspiration"></a>
+          <div class="small-12">
+            <div>
+              <h2>Inspire</h2>
+                <div class="row photos-wrap">
+                  <div id="instafeed"></div>
+                   <!--  <div class="row small-12 medium-4 large-4">
+                      <div class="column"><a href="{{link}}">
+                        <img src="{{image}}"></a>
+                      </div>
+                      <div class="description">
+                        {{caption}}
+                      </div>
+                    </div> -->
+                </div>
+                <!-- <button id="mybutton">Load more</button> -->
+            </div>
+          </div>
+        </div>
+       </div>
 
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
 
   <div class="row expanded">
     <div class="large-12 columns footer">
