@@ -5,15 +5,17 @@ html,
 body {
 	-webkit-text-size-adjust: none;
     height: 100%;
+    margin-right: 0px;
 /*    padding: 0px;*/
 
 }
 
 body {
-	background-color: transparent;
 	font-family: 'Lato', Arial, sans-serif;
 	font-size: .889rem;
 	color: #392254;
+	margin: 0px;
+	
 }
 
 
@@ -121,8 +123,6 @@ h2 {
 .reiki {
 	min-height: 100%;
 	width: 100%;
-/*	z-index: -10;*/
-/*	position: relative;*/
 	background-image: url(../img/watercolor.png);
 	background-repeat: no-repeat;
 	background-position: center;
