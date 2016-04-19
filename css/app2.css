@@ -184,8 +184,9 @@ label {
 	background-color: #E1DAEA;
 }
 
-.instagram h2 {
+.instagram-content h2 {
 	padding-bottom: 2rem;
+	color: #fff;
 }
 
 .instagram-box {
@@ -311,9 +312,23 @@ Media Queries
 		padding-top: 6rem;
 	}
 	.content {
-		padding: 2rem 8rem;
+		padding: 2rem 15rem;
 	}
 
+}
+
+@media screen and (min-width: 65em) {
+	.reiki {
+		min-height: 100%;
+		width: 100%;
+		padding-top: 4rem;
+		background-image: url(../img/watercolor.png);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center;
+		overflow: scroll;
+		text-align: center;
+	}
 }
 
 @media screen and (min-width: 65em) and (max-width: 80em) {
@@ -331,17 +346,6 @@ Media Queries
 		padding: 1rem 15rem;
 	}
 
-	.reiki {
-	min-height: 100%;
-	width: 100%;
-	padding-top: 4rem;
-	background-image: url(../img/watercolor.png);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center;
-	overflow: scroll;
-	text-align: center;
-	}
 
 	.appointment {
 	padding-top: 2rem;
@@ -364,6 +368,7 @@ Media Queries
 
 	.reiki {
 		padding: 10rem 0rem;
+		background-attachment: fixed;
 	}
 
 	.about .content {
