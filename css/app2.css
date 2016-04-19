@@ -138,6 +138,7 @@ h2 {
 	background-position: center;
 	overflow: scroll;
 	text-align: center;
+	word-spacing: 1px;
 }
 
 .about {
@@ -151,7 +152,10 @@ h2 {
 	color: #fff;
 }
 
-.about p {color: #372E44;}
+.about p {
+	color: #372E44;
+	word-spacing: 1px;
+}
 
 .pic {
 	margin-bottom: 2.5rem;
@@ -165,6 +169,7 @@ h2 {
 	min-height: 100%;
 	background-color: none;
 	padding-top: 1rem;
+	word-spacing: 1px;
 
 }
 
