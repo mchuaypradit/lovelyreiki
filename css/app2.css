@@ -41,6 +41,18 @@ a:hover {
 	text-decoration: overline;
 }
 
+.about a:link {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.about a:hover {
+	color: white;
+	text-decoration: overline;
+}
+
 .footer a:hover {
 	color: #321D5B;
 	font-weight: bold;
@@ -84,7 +96,6 @@ h1 {
 h2 {
 	font-family: 'Quicksand', Arial, sans-serif;
 	font-size: 2.1rem;
-	font-weight: light;
 	color: gray;
 	text-align: center;
 	padding-top: 2rem;
@@ -125,6 +136,10 @@ h2 {
 	display: inline-block;
 }
 
+.sticky.is-stuck {
+	border-bottom: 2px solid #F09CD4;
+}
+
 .arrow {
 	padding-top: 2rem;
 	width: 12%;
@@ -132,20 +147,24 @@ h2 {
 
 .reiki {
 	min-height: 100%;
-	width: 100%;
-	background-image: url(../img/watercolor.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	overflow: scroll;
-	text-align: center;
-	word-spacing: 1px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
+.reikipic {
+	display: block;
+	border: 2px solid #DCD1E8;
+	margin: 1rem 0rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+	
+}
 .about {
 	min-height: 100%;
 	overflow-y: scroll;
-	padding: 3rem 0rem;
 	background-color: #E1DAEA;
+	padding: 2rem 0rem;
 }
 .about h2,
 .instagram h2 { 
@@ -157,20 +176,30 @@ h2 {
 	word-spacing: 1px;
 }
 
-.pic {
-	margin-bottom: 2.5rem;
+
+.aboutpic {
 	border-radius: 50%;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin: 1rem 0rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+	
 }
 
 .appointment {
 	min-height: 100%;
-	background-color: none;
-	padding-top: 1rem;
+	width: 100%;
+	background-image: url(../img/watercolor.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: scroll;
 	word-spacing: 1px;
+	padding-top: 1rem;
+}
 
+.appointment .content {
+	text-align: center;
 }
 
 label {
@@ -184,13 +213,13 @@ label {
   border: 2px solid transparent;
   border-image: linear-gradient(45deg, #FF66CC, #DDAE85);
   border-image-slice: 1;
-  background: linear-gradient(45deg, #FF66CC, #DDAE85);
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  transition: all 0.3s ease; }
+  background: #fff;
+  text-fill-color: #E376B3;
+  transition: all 0.3s ease; 
+}
 
 .contact-form {
-	padding: 1rem;
+	padding-bottom: 3rem;
 }
 
 .instagram-content {
@@ -200,7 +229,6 @@ label {
 }
 
 .instagram-content h2 {
-	
 	color: #fff;
 }
 
@@ -255,7 +283,7 @@ Media Queries
 	}
 
 	.reiki { 
-		padding-top: 10rem;
+		padding-top: 1rem;
 	}
 }
 
@@ -300,10 +328,14 @@ Media Queries
 	}
 
 		.reiki { 
-		padding-top: 11rem;
+		padding-top: 8rem;
 	}
 
-		.content {
+	.reiki h2 {
+		padding-bottom: 3rem; 
+	}
+
+		.about .content {
 		padding: 1rem 8rem;
 	}
 
@@ -313,7 +345,7 @@ Media Queries
 
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 60em) and (max-width: 64em) {
 
 	.lovely {
 		padding-top: 1rem;
@@ -324,16 +356,30 @@ Media Queries
 	} 
 
 	.reiki {
-		padding-top: 6rem;
+		padding-top: 2rem;
 	}
-	.content {
-		padding: 2rem 15rem;
+
+	.reiki h2 {
+		padding-bottom: 2rem; 
+	}
+
+	.reiki .content {
+		padding-top: 5rem;
+		padding-left: 3rem;
+		padding-right: 0rem;
+	}
+
+	.about .content {
+		padding-top: 4rem;
+		padding-bottom: 3rem;
 	}
 
 }
 
+
+
 @media screen and (min-width: 65em) {
-	.reiki {
+	.appointment {
 		min-height: 100%;
 		width: 100%;
 		padding-top: 4rem;
@@ -342,8 +388,9 @@ Media Queries
 		background-repeat: no-repeat;
 		background-position: center;
 		overflow: scroll;
-		text-align: center;
 	}
+
+
 }
 
 @media screen and (min-width: 65em) and (max-width: 80em) {
@@ -357,10 +404,10 @@ Media Queries
 		padding-top: 0rem;
 	}
 
-	.content {
-		padding: 1rem 15rem;
+	.about .content {
+		padding-top: 3rem; 
+		padding-right: 5rem;
 	}
-
 
 	.appointment {
 	padding-top: 2rem;
@@ -368,7 +415,36 @@ Media Queries
 
 }
 
+/* MacBook 13in and up */
+@media screen and (min-width: 80em) and (max-width: 100em) {
 
+	.lovely {
+		padding-top: 1rem;
+	}
+
+	.reiki h2 {
+		padding-bottom: 2rem;
+	}
+
+	.reiki .content {
+		padding-top: 9rem;
+		padding-right: 0rem;
+		padding-left: 3rem;
+	}
+
+	.aboutpic {
+		margin-left: auto;
+		margin-right: 0;
+	}
+	.about .content {
+		padding-top: 5rem;
+		padding-right: 10rem;
+	}
+
+
+}
+
+/*iMac 21.5in and up */
 @media screen and (min-width: 100em) {
 
 	.lovely {
@@ -378,16 +454,34 @@ Media Queries
 
 	.lovelytitle {
 		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
+		padding-bottom: 2.5rem;
 	}
 
 	.reiki {
-		padding: 10rem 0rem;
+		padding: 1rem 0rem;
 		background-attachment: fixed;
 	}
 
+	.reiki h2 {
+		padding-top: 5rem;
+		padding-bottom: 2rem;
+	}
+
+	.reiki .content {
+		padding-top: 9rem;
+	}
+
+	.aboutpic {
+		margin-left: auto;
+		margin-right: 0;
+	}
+
 	.about .content {
-		padding: 0rem 32rem;
+		padding-top: 5rem;
+		padding-right: 25rem;
+	}
+	.appointment .content {
+		padding: 3rem 32rem;
 	}
 
 	.appointment {
