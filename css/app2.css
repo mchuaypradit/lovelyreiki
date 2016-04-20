@@ -43,8 +43,9 @@ a:visited {
 }
 
 a:hover {
-	color: #DCD1E8;
-	text-decoration: overline;
+	background: linear-gradient(45deg, #FF66CC, #DDAE85);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 .about a:link {
@@ -54,10 +55,6 @@ a:hover {
 	text-decoration: none;
 }
 
-.about a:hover {
-	color: white;
-	text-decoration: overline;
-}
 
 .footer a:hover {
 	color: #321D5B;
