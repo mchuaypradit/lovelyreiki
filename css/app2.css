@@ -42,7 +42,8 @@ a:visited {
 	color: #321D5B;
 }
 
-a:hover {
+.menu a:hover,
+p a:hover {
 	background: linear-gradient(45deg, #FF66CC, #DDAE85);
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
@@ -56,16 +57,16 @@ a:hover {
 }
 
 
-.footer a:hover {
+/*.footer a:hover {
 	color: #321D5B;
 	font-weight: bold;
 	text-decoration: none;
-}
+}*/
 
-.footer a:link {
+/*.footer a:link {
 	font-size: .707rem;
 	list-style-type: none;
-}
+}*/
 
 .button:hover {
 	color: #fff;
@@ -75,12 +76,12 @@ a:hover {
 
 .iconstyle a:link,
 .iconstyle a:visited {
-	font-size: 3rem;
-	color: white;
+	font-size: 2rem;
+	color: #FF66CC;
 }
 
 .iconstyle a:hover {
-	color: #FF66CC;
+	color: #E1DAEA;
 }
 
 
@@ -304,13 +305,21 @@ label {
 
 }
 
+.footer ul {
+	margin: 0;
+}
 .footer li {
 	list-style-type: none;
-	float: right;
+	display: inline-block;
 	color: #392254;
-	margin: 0 1rem .5rem 0;
+	margin-right: 1rem;
 }
 
+.iconstyle {
+	/*background-color: red;*/
+	text-align: center;
+
+}
 /*****************************
 Media Queries 
 ******************************/	
@@ -624,11 +633,4 @@ Animation
     }
 }
 
-.iconstyle {
-	/*background-color: red;*/
-	padding: 2rem;
-	color: white;
-	text-align: center;
-
-}
 
