@@ -488,6 +488,11 @@ Media Queries
 /* 1280px and 1600px */
 @media screen and (min-width: 80em) and (max-width: 100em) {
 
+	.lovelybanner {
+		padding-top: 1rem;
+		width: 38%;
+	}
+
 	.lovely {
 		padding-top: 1rem;
 	}
@@ -521,6 +526,11 @@ Media Queries
 
 	.header {
 		padding-top: 8rem;
+	}
+
+	.lovelybanner {
+		padding-top: 2rem;
+		width: 30%;
 	}
 
 	.lovelytitle {
@@ -568,6 +578,15 @@ Media Queries
 /* 1920px and 2560px */
 @media screen and (min-width: 120em) and (max-width: 140em) {
 	
+	.lovelybanner {
+		padding-top: 2rem;
+		width: 30%;
+	}
+
+	.lovelybanner {
+		padding-top: 2rem;
+		width: 30%;
+	}
 	.header {
 		padding-top: 2rem;
 	}
@@ -582,7 +601,12 @@ Media Queries
 @media screen and (min-width: 140em) {
 	
 	.header {
-		padding-top: 20rem;
+		padding-top: 15rem;
+	}
+
+	.lovelybanner {
+		padding-top: 2rem;
+		width: 25%;
 	}
 
 	.reiki .content {
