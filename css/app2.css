@@ -26,6 +26,7 @@ a {
 .columns {padding: 0px;}
 
 cite {
+	padding: 0rem 1rem 1rem;
 	color: inherit;
 	text-align: right;
 }
@@ -52,6 +53,10 @@ p a:hover {
 	font-size: inherit;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.book a:link {
+	font-weight: bolder;
 }
 
 .button:hover {
@@ -88,7 +93,8 @@ h2 {
 	font-size: 2.1rem;
 	color: gray;
 	text-align: center;
-	padding-top: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 
 }
 
@@ -98,7 +104,10 @@ h2 {
 	background: linear-gradient(45deg, #FF66CC, #DDAE85);
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-	padding-top: 2rem;
+}
+
+p.triangle {
+	margin-bottom: .5rem;
 }
 
 .content {
@@ -151,8 +160,6 @@ h2 {
 
 .reiki h2 { 
 	color: #fff;
-	padding-top: 0rem;
-	padding-bottom: 1rem;
 }
 
 .reikipic {
@@ -167,8 +174,23 @@ h2 {
 	border: 2px solid #DCD1E8;
 }
 
+.book {
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.book input {
+	border: 2px solid white;
+	background-color: transparent;
+	color: #fff;
+	font-weight: bolder;
+	padding: 1rem;
+	width: 15rem;
+	margin-bottom: 0;
+}
+
 .about {
-	padding: 2rem 1rem;
+	padding: 2rem 0rem;
 }
 
 
@@ -192,10 +214,6 @@ h2 {
 	background-image: url(../img/watercolor.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	word-spacing: 1px;
-	padding-top: 20%;
-	padding-left: 2%;
-	padding-right: 2%;
 }
 
 .praise .content {
@@ -287,7 +305,6 @@ Media Queries
 @media screen and (min-width: 30em) and (max-width: 37.5em) {
 
 	.lovelybanner {
-		padding-top: .5rem;
 		width: 50%;
 	}
 }
@@ -303,37 +320,38 @@ Media Queries
 	.reiki { 
 		padding-top: 1rem;
 	}
-
-	.reikipic,
-	.aboutpic {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 }
 
-/* 640px and 752px */
+/* 640px and 768px */
 @media screen and (min-width: 40em) and (max-width: 47em) {
+
+	h2 {
+		font-size: 1.8rem;
+	}
 
 	.lovely {
 		padding-top: 0rem;
 	}
 
 	.lovelybanner {
-		width: 45%;
+		width: 40%;
 	}
 
 	.lovelytitle {
-		padding-bottom: 0;
+		padding-bottom: .5rem;
 	} 
 
-	h1 {
-		margin-top: .5rem;
-		font-size: 1.1rem;
+	.lovelytitle h1 {
+		font-size: 1.2rem;
 	}
 
 	.reikipic {
-		margin-top: 1rem;
+		margin-top: 3rem;
+	}
+
+	.book {
+		/*display: none;*/
+		margin-top: 3rem;
 	}
 
 	.aboutpic {
@@ -356,35 +374,36 @@ Media Queries
 		padding-top: 6rem;
 	}
 
+	.lovely {
+		padding-bottom: 3rem;
+	}
+
 	.lovelybanner {
 		width: 45%;
-		margin: 3rem;
+		margin: 2rem;
 	}
 
 	.lovelytitle {
-		margin-bottom: 5rem;
+		margin-bottom: 3rem;
 		padding-bottom: 0;
 	} 
 
-	h1 {
-		margin-top: .5rem;
-		font-size: 1.1rem;
+	.reikipic {
+		margin-top: 3rem;
 	}
 
 	.about {
-		padding-top: 5rem;
 		min-height: 100%;
-	}
-
-	.aboutpic {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		padding: 5rem 3rem 0;
 	}
 
 	.praise {
 		overflow: scroll;
-		padding-top: 2rem;
+		padding: 2rem 3rem 0rem;
+	}
+
+	.appointment {
+		padding-top: 5rem;
 	}
 
 	.instagram-content {
@@ -420,9 +439,7 @@ Media Queries
 
 @media screen and (min-width: 64em) {
 	.praise {
-		padding-top: 5%;
-		padding-left: 5%;
-		padding-right: 5%;
+		padding: 3rem 7rem 0;
 	}
 }
 
@@ -450,15 +467,17 @@ Media Queries
 
 	.lovelybanner {
 		padding-top: 2rem;
-		width: 40%;
+		width: 45%;
 	}
 
+	.reiki,
 	.about {
 		min-height: 100%;
+		padding-top: 3rem;
 	}
 
 	.aboutpic {
-		padding-top: 3rem;
+		padding-top: 2rem;
 	}
 
 	.appointment {
@@ -474,34 +493,29 @@ Media Queries
 		padding-top: 1rem;
 	}
 
+	.reiki {
+		min-height: 100%;
+		padding: 1rem 3rem;
+	}
+
+	.reiki .content {
+		padding: 5rem 2rem 0rem 5rem;
+	}
+
+	.about {
+		min-height: 100%;
+		padding: 5rem 3rem 2rem;
+	}
+
 	.about h2 {
 		padding-bottom: 2rem;
 	}
 
-	.reiki {
-		padding: 0rem 2rem;
-	}
-	.reiki .content {
-		padding: 5rem 2rem 0rem 3rem;
-	}
-
-	.about {
-		height: 100%;
-		padding: 0rem 3rem;
-	}
-
-	.aboutpic {
-		margin-left: auto;
-		margin-right: 0;
-		margin-top: 3rem;
-
-	}
 	.about .content {
-		padding-top: 3.5rem;
-		padding-right: 3rem;
+		padding-right: rem;
 	}
-
 	.praise .content {
+
 		padding: 1rem 15rem;
 	}
 
@@ -520,25 +534,20 @@ Media Queries
 	}
 
 	.reiki {
-		height: 100%;
-		padding: 10rem 15rem 5rem;
+		min-height: 100%;
+		padding: 5rem 15rem;
 	}
 
 	.reiki .content {
 		padding: 3rem 3rem 0rem;
 	}
 
-	.aboutpic {
-		margin-top: 5rem;
-	}
-
 	.about {
-		margin: 5rem 10rem;
-		height: 100%;
+		padding: 10rem 10rem;
+		min-height: 100%;
 	}
 
 	.about h2 {
-		padding-top: 2rem;
 		padding-bottom: 2rem;
 	}
 
@@ -603,6 +612,10 @@ Media Queries
 
 	.praise {
 		padding: 20rem 40rem;
+	}
+
+	.praise .content {
+		padding: 0rem 5rem 5rem;
 	}
 
 	.appointment {
