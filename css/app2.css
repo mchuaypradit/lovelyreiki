@@ -59,7 +59,8 @@ p a:hover {
 	font-weight: bolder;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
 	color: #fff;
     background: linear-gradient(45deg, #FF66CC, #DDAE85);
 	text-decoration: none;
@@ -101,9 +102,7 @@ h2 {
 .triangle {
 	text-align: center;
 	font-size: 1.5rem;
-	background: linear-gradient(45deg, #FF66CC, #DDAE85);
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+	color: #FF66CC;
 }
 
 p.triangle {
