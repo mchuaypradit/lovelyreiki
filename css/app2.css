@@ -7,8 +7,6 @@ body {
     height: 100%;
     margin-right: 0px;
 
-/*    padding: 0px;*/
-
 }
 
 body {
@@ -55,18 +53,6 @@ p a:hover {
 	font-weight: bold;
 	text-decoration: none;
 }
-
-
-/*.footer a:hover {
-	color: #321D5B;
-	font-weight: bold;
-	text-decoration: none;
-}*/
-
-/*.footer a:link {
-	font-size: .707rem;
-	list-style-type: none;
-}*/
 
 .button:hover {
 	color: #fff;
@@ -118,19 +104,19 @@ h2 {
 .content {
 	text-align: left;
 	padding: 1.5rem;
-	background-color: transparent;
+	
 }
 
 .header {
 	min-height: 100%;
-	background-color: none;
+	background-color: inherit;
 	padding-bottom: 1.5rem;
 
 }
 
 .lovely {
 	max-width: 100%;
-	background-color: none;
+	background-color: inherit;
 	padding-top: 4rem;
  	text-align: center;
 }
@@ -160,72 +146,52 @@ h2 {
 
 .reiki {
 	background-color: #E1DAEA;
-	min-height: 100%;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding: 2rem 0rem;
+}
+
+.reiki h2 { 
+	color: #fff;
+	padding-top: 0rem;
+	padding-bottom: 1rem;
 }
 
 .reikipic {
+	margin: 1rem auto;
 	display: block;
-	border: 2px solid #DCD1E8;
-	margin-top: 2rem;
 	margin-left: auto;
 	margin-right: auto;
 	padding: .5rem;
-	
-}
-/*
-.orbit-container {
-	height: auto;
 }
 
-.orbit-bullets button {
-    width: .5rem;
-    height: .5rem;
-    margin: .1rem;
-    border: 1px solid #B09ED4;
-    background-color: transparent;
-    border-radius: 10%;
+.reikipic img {
+	border: 2px solid #DCD1E8;
 }
 
-.orbit-bullets button.is-active, .orbit-bullets button:hover {
-    background-color: #B09ED4;
-}
-*/
 .about {
-	min-height: 100%;
-	overflow-y: scroll;
-	padding: 2rem 0rem;
+	padding: 2rem 1rem;
 }
-.reiki h2,
-.instagram h2 { 
-	color: #fff;
-}
+
 
 .about p {
 	color: #372E44;
 	word-spacing: 1px;
 }
 
-
 .aboutpic {
-	border-radius: 50%;
 	display: block;
-	margin: 1rem 0rem;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 50%;
 	padding: 1rem;
-	
 }
 
 .praise {
-	min-height: 100%;
-	width: 100%;
+	height: 100%;
+	overflow: scroll;
 	background-color: white;
 	background-image: url(../img/watercolor.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	overflow: scroll;
 	word-spacing: 1px;
 	padding-top: 20%;
 	padding-left: 2%;
@@ -234,7 +200,8 @@ h2 {
 
 .praise .content {
 	padding: 1.5rem;
-	text-align: center;
+	text-align: left;
+	text-indent: 30px;
 }
 
 .praise p {
@@ -245,10 +212,6 @@ h2 {
 .appointment {
 	min-height: 100%;
 	width: 100%;
-/*	background-image: url(../img/watercolor.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	overflow: scroll;*/
 	word-spacing: 1px;
 	padding-top: 1rem;
 }
@@ -278,7 +241,6 @@ label {
 }
 
 .instagram-content {
-	min-height: 100%;
 	padding: 2rem 1rem 1rem 1rem;
 	background-color: #E1DAEA;
 }
@@ -301,8 +263,6 @@ label {
     height: 6rem;
     overflow: scroll;
     white-space: pre-wrap;
-   /* text-overflow: ellipsis;*/
-
 }
 
 .footer ul {
@@ -316,7 +276,6 @@ label {
 }
 
 .iconstyle {
-	/*background-color: red;*/
 	text-align: center;
 
 }
@@ -331,11 +290,6 @@ Media Queries
 		padding-top: .5rem;
 		width: 50%;
 	}
-
-	.reiki { 
-		padding-top: 4rem;
-	}
-
 }
 
 /* 600px and 624px */
@@ -349,10 +303,17 @@ Media Queries
 	.reiki { 
 		padding-top: 1rem;
 	}
+
+	.reikipic,
+	.aboutpic {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
-/* 640px and 736px */
-@media screen and (min-width: 40em) and (max-width: 46em) {
+/* 640px and 752px */
+@media screen and (min-width: 40em) and (max-width: 47em) {
 
 	.lovely {
 		padding-top: 0rem;
@@ -372,55 +333,64 @@ Media Queries
 	}
 
 	.reikipic {
-		margin-top: 9rem;
+		margin-top: 1rem;
 	}
+
+	.aboutpic {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.praise {
+		overflow: scroll;
+		padding-top: 2rem;
+	}
+
 
 }
 
-/* 752px and 960px */
+/* 768px and 960px */
 @media screen and (min-width: 47em) and (max-width: 60em) {
-
-		.lovely {
-		padding-top: 8rem;
+	.header {
+		padding-top: 6rem;
 	}
 
-		.lovelybanner {	
-		width: 50%;
+	.lovelybanner {
+		width: 45%;
+		margin: 3rem;
 	}
 
-		.lovelytitle {
-		padding: 5rem 0;
+	.lovelytitle {
+		margin-bottom: 5rem;
+		padding-bottom: 0;
 	} 
 
-		h1 {
-		font-size: 1.3rem;
+	h1 {
+		margin-top: .5rem;
+		font-size: 1.1rem;
 	}
 
-		.reiki { 
-		padding-top: 8rem;
-	}
-
-	.reiki h2 {
-		padding-bottom: 2rem; 
-	}
-
-	.reikipic {
-		margin-top: 7rem;
-	}
-
-		.about .content {
-		padding: 1rem 8rem;
-	}
-
-		.appointment {
+	.about {
 		padding-top: 5rem;
+		min-height: 100%;
 	}
 
-	.about h2 {
-		padding-top: 0rem;
-		padding-bottom: 2rem;
+	.aboutpic {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
+	.praise {
+		overflow: scroll;
+		padding-top: 2rem;
+	}
+
+	.instagram-content {
+			height: 100%;
+			overflow: scroll;
+	}
 }
 
 /* 960px and 1024px */
@@ -434,22 +404,16 @@ Media Queries
 		padding: 1.5rem 0 2rem 0;
 	} 
 
-	.reiki {
-		padding-top: 2rem;
-	}
-
-	.reiki h2 {
-		padding-bottom: 2rem; 
-	}
-
-	.reiki .content {
-		padding-top: 5rem;
-		padding-left: 3rem;
-		padding-right: 0rem;
+	.reikipic {
+		margin: 0 auto;
 	}
 
 	.about .content {
 		padding-top: 0rem;
+	}
+
+	.about {
+		min-height: 100%;
 	}
 
 }
@@ -477,29 +441,29 @@ Media Queries
 
 	.triangle {
 	padding-top: 1rem;
-}
+	}
 }
 
 /* 1024px and 1280px */
-@media screen and (min-width: 65em) and (max-width: 80em) {
+@media screen and (min-width: 64em) and (max-width: 80em) {
+
 
 	.lovelybanner {
-		padding-top: .5rem;
+		padding-top: 2rem;
 		width: 40%;
 	}
 
-	.menu {
-		padding-top: 0rem;
+	.about {
+		min-height: 100%;
 	}
 
-	.about .content {
-		padding-top: 3rem; 
-		padding-right: 5rem;
+	.aboutpic {
+		padding-top: 3rem;
 	}
 
 	.appointment {
 	padding-top: 2rem;
-}
+	}
 
 }
 
@@ -510,34 +474,31 @@ Media Queries
 		padding-top: 1rem;
 	}
 
-	.content {
-		padding: 0rem;
-	}
-
-	.reiki {
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-
-	.reiki h2,
 	.about h2 {
 		padding-bottom: 2rem;
 	}
 
+	.reiki {
+		padding: 0rem 2rem;
+	}
 	.reiki .content {
-		/*padding-top: 8rem;*/
-		padding-right: 0rem;
-		padding-left: 5rem;
+		padding: 5rem 2rem 0rem 3rem;
+	}
+
+	.about {
+		height: 100%;
+		padding: 0rem 3rem;
 	}
 
 	.aboutpic {
 		margin-left: auto;
 		margin-right: 0;
 		margin-top: 3rem;
+
 	}
 	.about .content {
 		padding-top: 3.5rem;
-		padding-right: 10rem;
+		padding-right: 3rem;
 	}
 
 	.praise .content {
@@ -546,12 +507,11 @@ Media Queries
 
 }
 
-/* 1600px and up */
-@media screen and (min-width: 100em) {
+/* 1600px and 1920px */
+@media screen and (min-width: 100em) and (max-width: 120em) {
 
-	.lovely {
-		padding-top: 6rem;
-
+	.header {
+		padding-top: 8rem;
 	}
 
 	.lovelytitle {
@@ -560,32 +520,21 @@ Media Queries
 	}
 
 	.reiki {
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-
-	.reiki h2 {
-		padding-top: 5rem;
-		padding-bottom: 2rem;
+		height: 100%;
+		padding: 10rem 15rem 5rem;
 	}
 
 	.reiki .content {
-		padding-top: 3rem;
-		padding-right: 0rem;
-		padding-left: 30rem;
-	}
-
-	.reikipic {
-		margin-left: 3rem;
+		padding: 3rem 3rem 0rem;
 	}
 
 	.aboutpic {
-		margin-left: auto;
-		margin-right: 0;
+		margin-top: 5rem;
 	}
 
 	.about {
-		padding: 10rem 0rem;
+		margin: 5rem 10rem;
+		height: 100%;
 	}
 
 	.about h2 {
@@ -594,13 +543,12 @@ Media Queries
 	}
 
 	.about .content {
-		padding-right: 25rem;
+		padding-right: 5rem;
+		padding-top: 3rem;
 	}
 
 	.praise {
-		padding-top: 10%;	
-		padding-left: 20%;
-		padding-right: 20%;
+		padding: 10rem 30rem;
 	}
 
 	.appointment .content {
@@ -609,9 +557,65 @@ Media Queries
 
 	.appointment {
 	padding-top: 5rem;
-}
+	}
 
 }
+
+/* 1920px and 2560px */
+@media screen and (min-width: 120em) and (max-width: 140em) {
+	
+	.header {
+		padding-top: 2rem;
+	}
+
+	.about .content {
+		padding-top: 7rem;
+		padding-left: 5rem;
+	}
+
+}
+/* 2560px and up */
+@media screen and (min-width: 140em) {
+	
+	.header {
+		padding-top: 20rem;
+	}
+
+	.reiki .content {
+		padding-top: 3rem;
+		padding-left: 10rem;
+	}
+
+	.reiki,
+	.about {
+		padding: 5rem 30rem;
+	}
+
+	.aboutpic {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.about .content {
+		padding-right: 10rem;
+	}
+
+	.praise {
+		padding: 20rem 40rem;
+	}
+
+	.appointment {
+		padding-top: 15rem;
+	}
+
+	.instagram-content {
+		min-height: 100%;
+		padding: 10rem 20rem;
+	}
+
+}
+
 
 /*****************************
 Animation
