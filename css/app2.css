@@ -511,12 +511,8 @@ Media Queries
 		padding-bottom: 2rem;
 	}
 
-	.about .content {
-		padding-right: rem;
-	}
 	.praise .content {
-
-		padding: 1rem 15rem;
+		padding: 1rem 10rem;
 	}
 
 }
