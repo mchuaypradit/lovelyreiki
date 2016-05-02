@@ -571,7 +571,14 @@ Media Queries
 	.appointment {
 	padding-top: 5rem;
 	}
+	
+	.instagram-content {
+		padding: 2rem 8rem 1rem;
+	}
 
+	.instagram-box {
+		padding: 2rem;
+	}
 }
 
 /* 1920px and 2560px */
@@ -593,6 +600,14 @@ Media Queries
 	.about .content {
 		padding-top: 5rem;
 		padding-left: 5rem;
+	}
+
+	.instagram-content {
+		padding: 2rem 8rem 1rem;
+	}
+
+	.instagram-box {
+		padding: 3rem;
 	}
 
 }
@@ -642,7 +657,11 @@ Media Queries
 
 	.instagram-content {
 		min-height: 100%;
-		padding: 10rem 20rem;
+		padding: 5rem 20rem;
+	}
+
+	.instagram-box {
+		padding: 2rem;
 	}
 
 }
