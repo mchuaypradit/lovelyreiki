@@ -208,6 +208,7 @@ p.triangle {
 .praise {
 	height: 100%;
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 	background-color: white;
 	background-image: url(../img/watercolor.png);
 	background-repeat: no-repeat;
