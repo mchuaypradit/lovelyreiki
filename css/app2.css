@@ -569,7 +569,12 @@ Media Queries
 	}
 
 	.appointment {
-	padding-top: 5rem;
+		padding-top: 5rem;
+	}
+
+	.contact-form {
+		padding-left: 15rem;
+		padding-right: 15rem;
 	}
 	
 	.instagram-content {
@@ -600,6 +605,11 @@ Media Queries
 	.about .content {
 		padding-top: 5rem;
 		padding-left: 5rem;
+	}
+
+	.contact-form {
+		padding-left: 15rem;
+		padding-right: 15rem;
 	}
 
 	.instagram-content {
@@ -653,6 +663,11 @@ Media Queries
 
 	.appointment {
 		padding-top: 15rem;
+	}
+
+	.contact-form {
+		padding-left: 20rem;
+		padding-right: 20rem;
 	}
 
 	.instagram-content {
