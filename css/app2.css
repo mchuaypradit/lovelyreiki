@@ -529,7 +529,7 @@ Media Queries
 	}
 
 	.aboutpic {
-		padding-top: 2rem;
+		margin-top: 2rem;
 	}
 
 	.appointment {
@@ -643,95 +643,58 @@ Media Queries
 /* 1920px and 2560px */
 @media screen and (min-width: 120em) and (max-width: 140em) {
 	
-	.lovelybanner {
-		padding-top: 2rem;
-		width: 30%;
-	}
+	.lovelybanner { padding-top: 2rem;
+					width: 30%;}
 
-	.lovelybanner {
-		padding-top: 2rem;
-		width: 30%;
-	}
-	.header {
-		padding-top: 2rem;
-	}
+	.lovelybanner {	padding-top: 2rem; 
+					width: 30%;}
 
-	.about .content {
-		padding-top: 5rem;
-		padding-left: 5rem;
-	}
+	.header {padding-top: 2rem;}
 
-	.contact-form {
-		padding-left: 15rem;
-		padding-right: 15rem;
-	}
+	.about .content {	padding-top: 5rem;
+						padding-left: 5rem;}
 
-	.instagram-content {
-		padding: 2rem 8rem 1rem;
-	}
+	.contact-form {	padding-left: 15rem;
+					padding-right: 15rem;}
 
-	.instagram-box {
-		padding: 3rem;
-	}
+	.instagram-content {padding: 2rem 8rem 1rem;}
+
+	.instagram-box {padding: 3rem;}
 
 }
 /* 2560px and up */
 @media screen and (min-width: 140em) {
 	
-	.header {
-		padding-top: 15rem;
-	}
+	.header {padding-top: 15rem;}
 
-	.lovelybanner {
-		padding-top: 2rem;
-		width: 25%;
-	}
+	.lovelybanner {	padding-top: 2rem;
+					width: 25%;}
 
-	.reiki .content {
-		padding-top: 3rem;
-		padding-left: 10rem;
-	}
+	.reiki .content {	padding-top: 3rem;
+						padding-left: 10rem;}
 
 	.reiki,
-	.about {
-		padding: 5rem 30rem;
-	}
+	.about {padding: 5rem 30rem;}
 
-	.aboutpic {
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-	}
+	.aboutpic {	display: block;
+				margin-right: auto;
+				margin-left: auto;}
 
-	.about .content {
-		padding-right: 10rem;
-	}
+	.about .content {padding-right: 10rem;}
 
-	.praise {
-		padding: 20rem 40rem;
-	}
+	.praise {padding: 20rem 40rem;}
 
-	.praise .content {
-		padding: 0rem 5rem 5rem;
-	}
+	.praise .content {padding: 0rem 5rem 5rem;}
 
-	.appointment {
-		padding-top: 15rem;
-	}
+	.appointment {padding-top: 15rem;}
 
-	.contact-form {
-		padding-left: 20rem;
-		padding-right: 20rem;
-	}
+	.contact-form {	padding-left: 20rem;
+					padding-right: 20rem;}
 
-	.instagram-content {
-		min-height: 100%;
-		padding: 5rem 20rem;
-	}
+	.instagram-content {	min-height: 100%;
+							padding: 5rem 20rem;}
 
-	.instagram-box {
-		padding: 2rem;
-	}
+	.instagram-box {padding: 2rem;}
 
 }
 
