@@ -269,22 +269,26 @@ label {
 	padding-bottom: 3rem;
 }
 
-input {
-	font-size: .707rem;
-}
-
 input#fullname,
 input#email,
 input#tel,
 textarea#message {
 	margin-bottom: 1rem;
-	font-size: .707rem;
+	font-size: .889rem;
 }
 
-input::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);}
-input::-moz-placeholder {color: rgba(57, 34, 84, 0.8);}
-input:-moz-placeholder {/* Older versions of Firefox */color: rgba(57, 34, 84, 0.8);}
-input:-ms-input-placeholder {color: rgba(57, 34, 84, 0.8);}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);
+									font-size: .707rem;}
+input::-moz-placeholder,
+textarea::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);
+									font-size: .707rem;}
+input:-moz-placeholder,
+textarea::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);
+									font-size: .707rem;}
+input:-ms-input-placeholder,
+textarea::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);
+									font-size: .707rem;}
 
 #message::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);}
 #message:-moz-placeholder {color: rgba(57, 34, 84, 0.8);}
@@ -577,76 +581,42 @@ Media Queries
 /* 1600px and 1920px */
 @media screen and (min-width: 100em) and (max-width: 120em) {
 
-	.header {
-		padding-top: 8rem;
-	}
+	.header {padding-top: 8rem;}
 
-	.lovelybanner {
-		padding-top: 2rem;
-		width: 30%;
-	}
+	.lovelybanner {	padding-top: 2rem;
+					width: 30%;}
 
-	.lovelytitle {
-		padding-top: 1.5rem;
-		padding-bottom: 2.5rem;
-	}
+	.lovelytitle {padding: 1.5rem 0rem 2.5rem;}
 
-	.reiki {
-		min-height: 100%;
-		padding: 5rem 18rem;
-	}
+	.reiki {min-height: 100%;
+			padding: 5rem 18rem;}
 
-	.reiki .content {
-		padding: 3rem 3rem 0rem;
-	}
+	.reiki .content {padding: 3rem 3rem 0rem;}
 
-	.about {
-		padding: 10rem 10rem;
-		min-height: 100%;
-	}
+	.about {padding: 10rem 10rem;
+			min-height: 100%;}
 
-	.about h2 {
-		padding-bottom: 2rem;
-	}
+	.about h2 {padding-bottom: 2rem;}
 
-	.about .content {
-		padding-right: 5rem;
-		padding-top: 3rem;
-	}
+	.about .content {padding: 3rem 5rem 0rem 0rem;}
 
-	.praise {
-		padding: 10rem 30rem;
-	}
+	.praise {padding: 10rem 30rem;}
 
-	.appointment .content {
-		padding: 3rem 32rem;
-	}
+	.appointment .content {padding: 3rem 32rem;}
 
-	.appointment {
-		padding-top: 5rem;
-	}
+	.appointment {padding-top: 5rem;}
 
-	.contact-form {
-		padding-left: 15rem;
-		padding-right: 15rem;
-	}
+	.contact-form {padding: 0rem 15rem;}
 	
-	.instagram-content {
-		padding: 2rem 8rem 1rem;
-	}
+	.instagram-content {padding: 2rem 8rem 1rem;}
 
-	.instagram-box {
-		padding: 2rem;
-	}
+	.instagram-box {padding: 2rem;}
 }
 
 /* 1920px and 2560px */
 @media screen and (min-width: 120em) and (max-width: 140em) {
 	
 	.lovelybanner { padding-top: 2rem;
-					width: 30%;}
-
-	.lovelybanner {	padding-top: 2rem; 
 					width: 30%;}
 
 	.header {padding-top: 2rem;}
