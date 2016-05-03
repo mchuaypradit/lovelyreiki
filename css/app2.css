@@ -301,7 +301,7 @@ Media Queries
 ******************************/	
 
 /* 480px and 600px */
-@media screen and (min-width: 30em) and (max-width: 37.5em) {
+@media screen and (min-width: 30em) and (max-width: 37em) {
 
 	.lovelybanner {
 		width: 50%;
@@ -309,7 +309,7 @@ Media Queries
 }
 
 /* 600px and 624px */
-@media screen and (min-width: 37.5em) and (max-width: 39em) {
+@media screen and (min-width: 37em) and (max-width: 39em) {
 
 	.lovelybanner {
 		padding-top: 10rem;
