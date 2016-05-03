@@ -341,7 +341,8 @@ Media Queries
 	} 
 
 	.lovelytitle h1 {
-		font-size: 1.2rem;
+		margin-top: 0;
+		font-size: 1rem;
 	}
 
 	.reikipic {
@@ -378,7 +379,7 @@ Media Queries
 	}
 
 	.lovelybanner {
-		width: 45%;
+		width: 50%;
 		margin: 2rem;
 	}
 
@@ -414,24 +415,25 @@ Media Queries
 /* 960px and 1024px */
 @media screen and (min-width: 60em) and (max-width: 64em) {
 
-	.lovely {
+	.lovelybanner {
+		width: 45%;
 		padding-top: 1rem;
 	}
-
-	.lovelytitle {
-		padding: 1.5rem 0 2rem 0;
-	} 
 
 	.reikipic {
 		margin: 0 auto;
 	}
 
 	.about .content {
-		padding-top: 0rem;
+		padding: 0rem 5rem 0rem;
 	}
 
 	.about {
 		min-height: 100%;
+	}
+
+	.praise {
+		padding: 3rem 7rem 0;
 	}
 
 }
@@ -462,7 +464,6 @@ Media Queries
 
 /* 1024px and 1280px */
 @media screen and (min-width: 64em) and (max-width: 80em) {
-
 
 	.lovelybanner {
 		padding-top: 2rem;
