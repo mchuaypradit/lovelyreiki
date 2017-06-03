@@ -1,6 +1,6 @@
 $(document).foundation();
 
-$(document).ready(function() {
+/*$(document).ready(function() {
         var userFeed = new Instafeed({
         	get: 'user',
         	userId: '3044589536',
@@ -17,7 +17,7 @@ $(document).ready(function() {
             userFeed.run();
 
 
-});
+});*/
 
 $(document).ready(function($) {
     $('a[href^="#"]').bind('click.smoothscroll', function(e) {
