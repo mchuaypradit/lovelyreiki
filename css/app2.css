@@ -17,7 +17,6 @@ body {
 	
 }
 
-
 a {
 	font-family: 'Quicksand';
 	font-weight: lighter;
@@ -76,13 +75,24 @@ p a:hover {
 	color: #E1DAEA;
 }
 
+[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus,
+  textarea:focus {
+    border: 1px solid #FF66CC;
+    background: #fefefe;
+    outline: none;
+    box-shadow: 0 0 0px #F09CD4;
+    transition: none;
+}
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
 /*****************************
 Body Styling 
 ******************************/
 h1 {
 	font-family: 'Quicksand', Arial, sans-serif;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	color: #695284;
 	margin-top: 1.3rem;
 	text-align: center;
@@ -125,7 +135,7 @@ p.triangle {
 .lovely {
 	max-width: 100%;
 	background-color: inherit;
-	padding-top: 4rem;
+	padding-top: 1rem;
  	text-align: center;
 }
 
@@ -148,7 +158,7 @@ p.triangle {
 }
 
 .arrow {
-	padding-top: 2rem;
+	padding-top: 1rem;
 	width: 12%;
 }
 
@@ -203,12 +213,14 @@ p.triangle {
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 50%;
+	border: 2px solid #DCD1E8;
 	padding: 1rem;
 }
 
 .praise {
 	height: 100%;
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 	background-color: white;
 	background-image: url(../img/watercolor.png);
 	background-repeat: no-repeat;
@@ -230,7 +242,7 @@ p.triangle {
 	min-height: 100%;
 	width: 100%;
 	word-spacing: 1px;
-	padding-top: 1rem;
+	padding-top: 2rem;
 }
 
 .appointment .content {
@@ -255,6 +267,54 @@ label {
 
 .contact-form {
 	padding-bottom: 3rem;
+}
+
+input#fullname,
+input#email,
+input#tel,
+textarea#message {
+	margin-bottom: 1rem;
+	font-size: .889rem;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);
+									font-size: .707rem;}
+input::-moz-placeholder,
+textarea::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);
+									font-size: .707rem;}
+input:-moz-placeholder,
+textarea::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);
+									font-size: .707rem;}
+input:-ms-input-placeholder,
+textarea::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);
+									font-size: .707rem;}
+
+#message::-webkit-input-placeholder {color: rgba(57, 34, 84, 0.8);}
+#message:-moz-placeholder {color: rgba(57, 34, 84, 0.8);}
+#message::-moz-placeholder {color: rgba(57, 34, 84, 0.8);}
+#message:-ms-input-placeholder {color: rgba(57, 34, 84, 0.8);}
+
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    padding: .5rem;
+    border-bottom: 1px solid #F09CD4;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 0 0 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #0a0a0a;
+    background-color: #fefefe;
+    box-shadow: none;
+    border-radius: 0;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .instagram-content {
@@ -301,7 +361,7 @@ Media Queries
 ******************************/	
 
 /* 480px and 600px */
-@media screen and (min-width: 30em) and (max-width: 37.5em) {
+@media screen and (min-width: 30em) and (max-width: 37em) {
 
 	.lovelybanner {
 		width: 50%;
@@ -309,7 +369,7 @@ Media Queries
 }
 
 /* 600px and 624px */
-@media screen and (min-width: 37.5em) and (max-width: 39em) {
+@media screen and (min-width: 37em) and (max-width: 39em) {
 
 	.lovelybanner {
 		padding-top: 10rem;
@@ -341,7 +401,8 @@ Media Queries
 	} 
 
 	.lovelytitle h1 {
-		font-size: 1.2rem;
+		margin-top: 0;
+		font-size: 1rem;
 	}
 
 	.reikipic {
@@ -378,7 +439,7 @@ Media Queries
 	}
 
 	.lovelybanner {
-		width: 45%;
+		width: 50%;
 		margin: 2rem;
 	}
 
@@ -414,24 +475,25 @@ Media Queries
 /* 960px and 1024px */
 @media screen and (min-width: 60em) and (max-width: 64em) {
 
-	.lovely {
+	.lovelybanner {
+		width: 45%;
 		padding-top: 1rem;
 	}
-
-	.lovelytitle {
-		padding: 1.5rem 0 2rem 0;
-	} 
 
 	.reikipic {
 		margin: 0 auto;
 	}
 
 	.about .content {
-		padding-top: 0rem;
+		padding: 0rem 4rem 0rem;
 	}
 
 	.about {
 		min-height: 100%;
+	}
+
+	.praise {
+		padding: 3rem 7rem 0;
 	}
 
 }
@@ -454,15 +516,10 @@ Media Queries
 		background-position: center;
 		overflow: scroll;
 	}
-
-	.triangle {
-	padding-top: 1rem;
-	}
 }
 
 /* 1024px and 1280px */
 @media screen and (min-width: 64em) and (max-width: 80em) {
-
 
 	.lovelybanner {
 		padding-top: 2rem;
@@ -476,7 +533,7 @@ Media Queries
 	}
 
 	.aboutpic {
-		padding-top: 2rem;
+		margin-top: 2rem;
 	}
 
 	.appointment {
@@ -524,127 +581,90 @@ Media Queries
 /* 1600px and 1920px */
 @media screen and (min-width: 100em) and (max-width: 120em) {
 
-	.header {
-		padding-top: 8rem;
-	}
+	.header {padding-top: 8rem;}
 
-	.lovelybanner {
-		padding-top: 2rem;
-		width: 30%;
-	}
+	.lovelybanner {	padding-top: 2rem;
+					width: 30%;}
 
-	.lovelytitle {
-		padding-top: 1.5rem;
-		padding-bottom: 2.5rem;
-	}
+	.lovelytitle {padding: 1.5rem 0rem 2.5rem;}
 
-	.reiki {
-		min-height: 100%;
-		padding: 5rem 15rem;
-	}
+	.reiki {min-height: 100%;
+			padding: 5rem 18rem;}
 
-	.reiki .content {
-		padding: 3rem 3rem 0rem;
-	}
+	.reiki .content {padding: 3rem 3rem 0rem;}
 
-	.about {
-		padding: 10rem 10rem;
-		min-height: 100%;
-	}
+	.about {padding: 10rem 10rem;
+			min-height: 100%;}
 
-	.about h2 {
-		padding-bottom: 2rem;
-	}
+	.about h2 {padding-bottom: 2rem;}
 
-	.about .content {
-		padding-right: 5rem;
-		padding-top: 3rem;
-	}
+	.about .content {padding: 3rem 5rem 0rem 0rem;}
 
-	.praise {
-		padding: 10rem 30rem;
-	}
+	.praise {padding: 10rem 30rem;}
 
-	.appointment .content {
-		padding: 3rem 32rem;
-	}
+	.appointment .content {padding: 3rem 32rem;}
 
-	.appointment {
-	padding-top: 5rem;
-	}
+	.appointment {padding-top: 5rem;}
 
+	.contact-form {padding: 0rem 15rem;}
+	
+	.instagram-content {padding: 2rem 8rem 1rem;}
+
+	.instagram-box {padding: 2rem;}
 }
 
 /* 1920px and 2560px */
 @media screen and (min-width: 120em) and (max-width: 140em) {
 	
-	.lovelybanner {
-		padding-top: 2rem;
-		width: 30%;
-	}
+	.lovelybanner { padding-top: 2rem;
+					width: 30%;}
 
-	.lovelybanner {
-		padding-top: 2rem;
-		width: 30%;
-	}
-	.header {
-		padding-top: 2rem;
-	}
+	.header {padding-top: 2rem;}
 
-	.about .content {
-		padding-top: 7rem;
-		padding-left: 5rem;
-	}
+	.about .content {	padding-top: 5rem;
+						padding-left: 5rem;}
+
+	.contact-form {	padding-left: 15rem;
+					padding-right: 15rem;}
+
+	.instagram-content {padding: 2rem 8rem 1rem;}
+
+	.instagram-box {padding: 3rem;}
 
 }
 /* 2560px and up */
 @media screen and (min-width: 140em) {
 	
-	.header {
-		padding-top: 15rem;
-	}
+	.header {padding-top: 15rem;}
 
-	.lovelybanner {
-		padding-top: 2rem;
-		width: 25%;
-	}
+	.lovelybanner {	padding-top: 2rem;
+					width: 25%;}
 
-	.reiki .content {
-		padding-top: 3rem;
-		padding-left: 10rem;
-	}
+	.reiki .content {	padding-top: 3rem;
+						padding-left: 10rem;}
 
 	.reiki,
-	.about {
-		padding: 5rem 30rem;
-	}
+	.about {padding: 5rem 30rem;}
 
-	.aboutpic {
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-	}
+	.aboutpic {	display: block;
+				margin-right: auto;
+				margin-left: auto;}
 
-	.about .content {
-		padding-right: 10rem;
-	}
+	.about .content {padding-right: 10rem;}
 
-	.praise {
-		padding: 20rem 40rem;
-	}
+	.praise {padding: 20rem 40rem;}
 
-	.praise .content {
-		padding: 0rem 5rem 5rem;
-	}
+	.praise .content {padding: 0rem 5rem 5rem;}
 
-	.appointment {
-		padding-top: 15rem;
-	}
+	.appointment {padding-top: 15rem;}
 
-	.instagram-content {
-		min-height: 100%;
-		padding: 10rem 20rem;
-	}
+	.contact-form {	padding-left: 20rem;
+					padding-right: 20rem;}
+
+	.instagram-content {	min-height: 100%;
+							padding: 5rem 20rem;}
+
+	.instagram-box {padding: 2rem;}
 
 }
 
