@@ -219,7 +219,7 @@ p.triangle {
 
 .praise {
 	height: 100%;
-	overflow: scroll;
+	/*overflow: scroll;*/
 	-webkit-overflow-scrolling: touch;
 	background-color: white;
 	background-image: url(../img/watercolor.png);
@@ -421,7 +421,7 @@ Media Queries
 	}
 
 	.praise {
-		overflow: scroll;
+		/*overflow: scroll;*/
 		padding-top: 2rem;
 	}
 
@@ -458,7 +458,7 @@ Media Queries
 	}
 
 	.praise {
-		overflow: scroll;
+		/*overflow: scroll;*/
 		padding: 2rem 3rem 0rem;
 	}
 
@@ -514,7 +514,7 @@ Media Queries
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-position: center;
-		overflow: scroll;
+		/*overflow: scroll;*/
 	}
 }
 
