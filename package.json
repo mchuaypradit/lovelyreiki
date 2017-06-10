@@ -1,0 +1,22 @@
+{
+  "name": "lovelyreiki",
+  "version": "0.0.0",
+  "description": "Christina Lovely, Reiki Practitioner",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mchuaypradit/lovelyreiki.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/mchuaypradit/lovelyreiki/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-serve": "~0.1.6"
+  }
+}
