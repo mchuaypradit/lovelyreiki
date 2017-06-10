@@ -542,8 +542,8 @@ Media Queries
 
 }
 
-/* 1280px and 1600px */
-@media screen and (min-width: 80em) and (max-width: 100em) {
+/* 1280px and 1599px */
+@media screen and (min-width: 80em) and (max-width: 99.9999em) {
 
 	.lovelybanner {
 		padding-top: 1rem;
@@ -600,7 +600,7 @@ Media Queries
 
 	.about .content {padding: 3rem 5rem 0rem 0rem;}
 
-	.praise {padding: 10rem 30rem;}
+	.praise {padding: 10rem 20rem;}
 
 	.appointment .content {padding: 3rem 32rem;}
 
