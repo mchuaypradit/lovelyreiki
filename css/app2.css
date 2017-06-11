@@ -67,8 +67,9 @@ p a:hover {
 
 .iconstyle a:link,
 .iconstyle a:visited {
-	font-size: 2rem;
+	font-size: 3rem;
 	color: #FF66CC;
+	padding: 1rem;
 }
 
 .iconstyle a:hover {
@@ -243,6 +244,7 @@ p.triangle {
 	width: 100%;
 	word-spacing: 1px;
 	padding-top: 2rem;
+	margin-bottom: -15rem;
 }
 
 .appointment .content {
@@ -537,7 +539,7 @@ Media Queries
 	}
 
 	.appointment {
-	padding-top: 2rem;
+		padding-top: 2rem;
 	}
 
 }
