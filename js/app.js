@@ -7,7 +7,7 @@ function openFBLink() {
 
 function openIGLink() {
     setTimeout(function () { window.location = "https://www.instagram.com/christinalovelyreiki/"; }, 25);
-    window.location = "user?username=christinalovelyreiki";
+    window.location = "instagram://user?username=christinalovelyreiki";
 }
 
 var fbFooterElement = document.getElementById('fb-footer-element');
