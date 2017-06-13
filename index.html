@@ -152,9 +152,13 @@
       </div>
 
       <div class="column contact-form">
-        <form data-abide action="mailto:christinalovelyreiki@gmail.com?subject=Reiki Session" method="POST" name="contact-form" id="contact-form" enctype="text/plain">
+        <!-- Use free contact for serivce: https://formspree.io/ -->
+        <form data-abide action="https://formspree.io/jameson.edwards@gmail.com" method="POST" name="contact-form" id="contact-form" enctype="text/plain">
           <fieldset>
+              <input type="hidden" name="_next" value="//christinalovely.com/thanks.html" />
+              <input type="hidden" name="_subject" value="Reiki Session" />
               <div class="column medium-7 large-5 medium-centered collapse name-field">
+              <input type="text" name="_gotcha" style="display:none" />
               <input type="text" name="fullname" id="fullname" placeholder="NAME *" required>
                 <!-- <label for="name">Name *</label> -->
               </div>
